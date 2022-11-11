@@ -15,14 +15,19 @@ class ViewController: UIViewController {
     @IBOutlet var greenLight: UIView!
     
     @IBOutlet var buttonSwith: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         redLight.layer.cornerRadius = 65
+        redLight.alpha = 0.5
         yellowLight.layer.cornerRadius = 65
+        yellowLight.alpha = 0.5
         greenLight.layer.cornerRadius = 65
+        greenLight.alpha = 0.5
     }
 
     @IBAction func buttonSwitchPressed(_ sender: UIButton) {
+        
     }
     
 }
