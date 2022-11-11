@@ -8,19 +8,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var RedLight: UIView!
+    @IBOutlet var redLight: UIView!
     
-    @IBOutlet var YellowLight: UIView!
+    @IBOutlet var yellowLight: UIView!
     
-    @IBOutlet var GreenLight: UIView!
+    @IBOutlet var greenLight: UIView!
     
-    @IBOutlet var LightsButton: UIButton!
-    
+    @IBOutlet var buttonSwith: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        redLight.layer.cornerRadius = 65
+        yellowLight.layer.cornerRadius = 65
+        greenLight.layer.cornerRadius = 65
     }
 
-
+    @IBAction func buttonSwitchPressed(_ sender: UIButton) {
+    }
+    
 }
 
