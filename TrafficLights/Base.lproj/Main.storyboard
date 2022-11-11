@@ -16,30 +16,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="center" fixedFrame="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QoH-a5-E2J">
+                            <stackView opaque="NO" contentMode="center" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="QoH-a5-E2J">
                                 <rect key="frame" x="132" y="142" width="166" height="510"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dei-Rh-3nB">
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="dei-Rh-3nB">
                                         <rect key="frame" x="0.0" y="0.0" width="166" height="150"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NnZ-Mo-kQy">
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="NnZ-Mo-kQy">
                                         <rect key="frame" x="0.0" y="180" width="166" height="150"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sr4-ER-hwL">
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Sr4-ER-hwL">
                                         <rect key="frame" x="0.0" y="360" width="166" height="150"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Sr4-ER-hwL" secondAttribute="trailing" id="0H7-J4-xNl"/>
+                                    <constraint firstItem="NnZ-Mo-kQy" firstAttribute="centerY" secondItem="QoH-a5-E2J" secondAttribute="centerY" id="1T5-AT-ooR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sr4-ER-hwL" secondAttribute="bottom" id="4ZI-XG-Im0"/>
+                                    <constraint firstAttribute="trailing" secondItem="dei-Rh-3nB" secondAttribute="trailing" id="75E-HZ-f0a"/>
+                                    <constraint firstItem="Sr4-ER-hwL" firstAttribute="height" secondItem="NnZ-Mo-kQy" secondAttribute="height" id="Q8S-7Y-dZr"/>
+                                    <constraint firstItem="Sr4-ER-hwL" firstAttribute="leading" secondItem="QoH-a5-E2J" secondAttribute="leading" id="RPA-3B-v2r"/>
+                                    <constraint firstAttribute="trailing" secondItem="NnZ-Mo-kQy" secondAttribute="trailing" id="Vp0-nK-E4I"/>
+                                    <constraint firstItem="NnZ-Mo-kQy" firstAttribute="leading" secondItem="QoH-a5-E2J" secondAttribute="leading" id="W83-af-ngH"/>
+                                    <constraint firstItem="NnZ-Mo-kQy" firstAttribute="top" secondItem="QoH-a5-E2J" secondAttribute="top" constant="180" id="Yoz-mo-d7g"/>
+                                    <constraint firstItem="dei-Rh-3nB" firstAttribute="top" secondItem="QoH-a5-E2J" secondAttribute="top" id="ZnJ-TK-3FD"/>
+                                    <constraint firstItem="Sr4-ER-hwL" firstAttribute="width" secondItem="NnZ-Mo-kQy" secondAttribute="width" id="q4R-5o-y1Y"/>
+                                    <constraint firstItem="dei-Rh-3nB" firstAttribute="leading" secondItem="QoH-a5-E2J" secondAttribute="leading" id="vG5-XS-zac"/>
+                                </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuo-wu-pBU">
+                                <rect key="frame" x="118" y="777" width="194" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="QoH-a5-E2J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="EaN-he-DLl"/>
+                            <constraint firstItem="fuo-wu-pBU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="Fmn-2N-xsw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fuo-wu-pBU" secondAttribute="trailing" constant="118" id="WNo-vu-af1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fuo-wu-pBU" secondAttribute="bottom" constant="89" id="bkR-Jx-NzF"/>
+                            <constraint firstItem="fuo-wu-pBU" firstAttribute="top" secondItem="QoH-a5-E2J" secondAttribute="bottom" constant="125" id="k7g-vs-SAc"/>
+                            <constraint firstItem="QoH-a5-E2J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="nDF-AF-cTq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QoH-a5-E2J" secondAttribute="trailing" constant="132" id="rkz-B5-Frk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26.086956521739133" y="3.3482142857142856"/>
+            <point key="canvasLocation" x="-26.511627906976745" y="3.218884120171674"/>
         </scene>
     </scenes>
     <resources>
