@@ -18,17 +18,26 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redLight.layer.cornerRadius = 65
-        redLight.alpha = 0.5
-        yellowLight.layer.cornerRadius = 65
-        yellowLight.alpha = 0.5
-        greenLight.layer.cornerRadius = 65
-        greenLight.alpha = 0.5
-    }
-
-    @IBAction func buttonSwitchPressed(_ sender: UIButton) {
-        
+        redLight.layer.cornerRadius = redLight.frame.size.width/2
+        yellowLight.layer.cornerRadius = yellowLight.frame.size.width/2
+        greenLight.layer.cornerRadius = greenLight.frame.size.width/2
     }
     
+    @IBAction func buttonSwitchPressed(_ sender: UIButton) {
+        if greenLight.alpha == 1{
+            redLight.alpha = 1
+            yellowLight.alpha = 0.5
+            greenLight.alpha = 0.5
+        } else if redLight.alpha == 1{
+            redLight.alpha = 0.5
+            yellowLight.alpha = 1
+            greenLight.alpha = 0.5
+        } else if yellowLight.alpha == 1{
+            redLight.alpha = 0.5
+            yellowLight.alpha = 0.5
+            greenLight.alpha = 1
+        }
+    }
 }
+
 
